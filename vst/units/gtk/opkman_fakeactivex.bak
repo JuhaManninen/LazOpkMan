@@ -1,0 +1,3 @@
+unit OPkMan_FakeActiveX;
+
+{$i ../dummyactivex.inc}

@@ -1,0 +1,101 @@
+object PackageListFrm: TPackageListFrm
+  Left = 491
+  Height = 265
+  Top = 316
+  Width = 320
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'PackageListFrm'
+  ClientHeight = 265
+  ClientWidth = 320
+  Color = clBtnFace
+  PopupMode = pmExplicit
+  Position = poOwnerFormCenter
+  LCLVersion = '1.7'
+  object pnMessage: TPanel
+    Left = 0
+    Height = 47
+    Top = 0
+    Width = 320
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 47
+    ClientWidth = 320
+    TabOrder = 0
+    object lbMessage: TLabel
+      Left = 11
+      Height = 29
+      Top = 11
+      Width = 298
+      Anchors = [akTop, akLeft, akRight]
+      AutoSize = False
+      Caption = 'lbMessage'
+      ParentColor = False
+      WordWrap = True
+    end
+  end
+  object lwPackages: TListView
+    Left = 10
+    Height = 179
+    Top = 47
+    Width = 276
+    Align = alClient
+    AutoSort = False
+    AutoWidthLastColumn = True
+    BorderSpacing.Left = 10
+    BorderSpacing.Right = 10
+    Color = clBtnFace
+    Columns = <    
+      item
+        Caption = 'Name'
+        Width = 272
+      end>
+    ReadOnly = True
+    ScrollBars = ssVertical
+    ShowColumnHeaders = False
+    SmallImages = MainFrm.imTree
+    TabOrder = 1
+    ViewStyle = vsReport
+  end
+  object pnButtons: TPanel
+    Left = 0
+    Height = 39
+    Top = 226
+    Width = 320
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 39
+    ClientWidth = 320
+    TabOrder = 2
+    object bYes: TButton
+      Left = 157
+      Height = 25
+      Top = 5
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'Yes'
+      ModalResult = 6
+      TabOrder = 0
+    end
+    object bNo: TButton
+      Left = 234
+      Height = 25
+      Top = 5
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'No'
+      ModalResult = 7
+      TabOrder = 1
+    end
+  end
+  object pnUpDown: TPanel
+    Left = 296
+    Height = 179
+    Top = 47
+    Width = 24
+    Align = alRight
+    BevelOuter = bvNone
+    TabOrder = 3
+    Visible = False
+  end
+end
